@@ -42,7 +42,7 @@ class Walker_Nav_Primary extends Walker_Nav_menu {
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 		
 		$classes[] = ($args->walker->has_children) ? 'dropdown' : '';
-		$classes[] = ($item->current || $item->current_item_anchestor) ? 'active' : '';
+		$classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
 		$classes[] = 'menu-item-' . $item->ID;
 		if( $depth && $args->walker->has_children ){
 			$classes[] = 'dropdown-submenu';
@@ -67,7 +67,7 @@ class Walker_Nav_Primary extends Walker_Nav_menu {
 		$item_output .= '<a' . $attributes . '>';
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 		$item_output .= ( $depth == 0 && $args->walker->has_children ) ? ' <b class="caret"></b></a>' : '</a>';
-		$item_output .= $args->after;
+		$item_output .= $args->after;a
 		
 		$output .= apply_filters ( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 		
