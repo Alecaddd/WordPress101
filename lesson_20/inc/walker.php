@@ -42,7 +42,7 @@ class Walker_Nav_Primary extends Walker_Nav_menu {
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 		
 		$classes[] = ($args->walker->has_children) ? 'dropdown' : '';
-		$classes[] = ($item->current || $item->current_item_anchestor) ? 'active' : '';
+		$classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
 		$classes[] = 'menu-item-' . $item->ID;
 		if( $depth && $args->walker->has_children ){
 			$classes[] = 'dropdown-submenu';
