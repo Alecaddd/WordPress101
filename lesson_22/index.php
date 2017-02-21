@@ -15,7 +15,7 @@
 			while( have_posts() ): the_post(); ?>
 				
 				<?php 
-					if($i==0): $column = 12; 
+					if($i==0): $column = 12; $class = '';
 					elseif($i > 0 && $i <= 2): $column = 6; $class = ' second-row-padding';
 					elseif($i > 2): $column = 4; $class = ' third-row-padding';
 					endif;
