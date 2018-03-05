@@ -8,7 +8,7 @@ get_header(); ?>
 
 	<?php 
 		
-	$args = array('post_type' => 'portfolio', 'post_per_page' => 3 );
+	$args = array('post_type' => 'portfolio', 'posts_per_page' => 3 );
 	$loop = new WP_Query( $args );
 	
 	if( $loop->have_posts() ):
