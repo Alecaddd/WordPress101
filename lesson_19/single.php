@@ -35,7 +35,7 @@
 						if( comments_open() ){ 
 							comments_template(); 
 						} else {
-							echo '<h5 class="text-center">Sorry, Comments are closed!</h5>';
+							echo '<h5 class="text-center">Comments are closed!</h5>';
 						}
 						
 					 ?>
