@@ -2,8 +2,8 @@ html,
 body {
 	margin: 0;
 	color: #333;
-	background: #eee;
-	font-family: sans-serif;
+	background: hsl(0, 0%, 93%);
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
